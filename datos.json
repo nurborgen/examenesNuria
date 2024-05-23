@@ -1,0 +1,61 @@
+{
+  "tipos": [
+    {
+      "cod": "A",
+      "tipo": "Amigo",
+      "icono": "people-24px.svg"
+    },
+    {
+      "cod": "F",
+      "tipo": "Familia",
+      "icono": "home-24px.svg"
+    },
+    {
+      "cod": "T",
+      "tipo": "Trabajo",
+      "icono": "domain-24px.svg"
+    }
+  ],
+  "contactos": [
+    {
+      "id": 1,
+      "nombre": "Marta Pérez",
+      "tel": "676676767",
+      "email": "mp@gmail.com",
+      "tipo": "A",
+      "fecha": "2004-12-23"
+    },
+    {
+      "id": 3,
+      "nombre": "Anna Pla",
+      "tel": "987654321",
+      "email": "ap@gmail.com",
+      "tipo": "F",
+      "fecha": "2001-02-03"
+    },
+    {
+      "id": 5,
+      "nombre": "Júlia Montero",
+      "tel": "666555444",
+      "email": "jm@gmail.com",
+      "tipo": "T",
+      "fecha": "2006-09-12"
+    },
+    {
+      "id": 14,
+      "nombre": "Quim Cerdá",
+      "tel": "654321098",
+      "email": "qc@gmail.com",
+      "tipo": "F",
+      "fecha": "2014-12-23"
+    },
+    {
+      "nombre": "Joan Martí",
+      "tel": "654654654",
+      "email": "jm@gmail.com",
+      "tipo": "T",
+      "fecha": "2022-11-22 22:05:46",
+      "id": 22
+    }
+  ]
+}

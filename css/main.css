@@ -1,0 +1,18 @@
+h1 {
+	text-align: center;
+	color: gold;
+	background-color: navy;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+
+input:valid {
+	border: 1px solid green;
+}
+
+.error {
+	color: red;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Examen JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestor de contactos</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <table class="table table-striped" id="list">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>e-mail</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí insertaremos los contactos-->
+                    </tbody>
+                </table>
+                <p><strong>Total de contactos: <span id="total">0</span></strong></p>
+            </div>
+
+            <div class="col-sm-8 col-md-4 col-lg-4">
+                <form>
+                    <fieldset>
+                        <legend>Nuevo contacto</legend>
+                        <div class="form-group">
+                            <label for="contacto-id">Id:</label>
+                            <input type="text" class="form-control" id="contacto-id" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="contacto-nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="contacto-nombre" name="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="contacto-tel">Teléfono:</label>
+                            <input type="text" class="form-control" id="contacto-tel" name="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="contacto-email">e-mail:</label>
+                            <input type="email" class="form-control" id="contacto-email" name="e-mail">
+                        </div>
+                        <div class="form-group" id="tipos">
+                            <label>Tipo:</label>
+                            <!-- Aquí pondremos un botón para cada tipo de contacto -->
+                        </div>
+                        <br>
+                        <div id="errores" class="error">
+                            <!-- Aquí irán los errores -->
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="reset" class="btn btn-dark">Reset</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
