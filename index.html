@@ -1,76 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Examen JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Tienda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Ejercicio de Javascript">
+    <meta name="author" content="Juan Segura">
+    <meta name="keywords" content="JavaScript, Ejercicio, HTML5, DAW">
 </head>
 
 <body>
     <div class="container">
-        <h1>Gestor de contactos</h1>
+        <header>
+            <h1>Gestión de la tienda</h1>
+        </header>
+
+        <!-- Zona para mostrar mensajes al usuario -->
+        <div class="row" id="messages"></div>
+
         <div class="row">
-            <div class="col-sm-12 col-md-8 col-lg-8">
-                <table class="table table-striped" id="list">
-                    <thead>
-                        <tr>
-                            <th>Tipo</th>
-                            <th>Id</th>
-                            <th>Nombre</th>
-                            <th>Teléfono</th>
-                            <th>e-mail</th>
-                            <th>Fecha</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Aquí insertaremos los contactos-->
-                    </tbody>
-                </table>
-                <p><strong>Total de contactos: <span id="total">0</span></strong></p>
+            <!-- Tabla de juegos -->
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12" id="juegos">
+                        <h2>Juegos</h2>
+                        <table class="table table-striped table-hover">
+                            <thead class="thead-dark bg-primary">
+                                <tr>
+                                    <th>Portada</th>
+                                    <th>Id</th>
+                                    <th>Nombre</th>
+                                    <th>Plataforma</th>
+                                    <th>Fecha préstamo</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Aquí insertaremos los juegos-->
+                            </tbody>
+                        </table>
+                        <p>Total de juegos: <strong id="total">0</strong></p>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-sm-8 col-md-4 col-lg-4">
+            <!-- Formulario -->
+            <div class="col-sm-4">
                 <form>
                     <fieldset>
-                        <legend>Nuevo contacto</legend>
+                        <legend>Añadir juego</legend>
                         <div class="form-group">
-                            <label for="contacto-id">Id:</label>
-                            <input type="text" class="form-control" id="contacto-id" disabled>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre">
+                            <span class="errmsg"></span>
                         </div>
                         <div class="form-group">
-                            <label for="contacto-nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="contacto-nombre" name="Nombre">
+                            <label for="descrip">Descripción:</label>
+                            <textarea type="text" class="form-control" id="descrip"></textarea>
+                            <span class="errmsg"></span>
                         </div>
                         <div class="form-group">
-                            <label for="contacto-tel">Teléfono:</label>
-                            <input type="text" class="form-control" id="contacto-tel" name="Teléfono">
+                            <label for="plataforma">Plataforma</label>
+                            <select id="plataforma" class="form-control">
+                                <option>- Selecciona un plataforma -</option>
+                            </select>
+                            <span class="errmsg"></span>
                         </div>
                         <div class="form-group">
-                            <label for="contacto-email">e-mail:</label>
-                            <input type="email" class="form-control" id="contacto-email" name="e-mail">
+                            <label for="fecprest">Fecha préstamo:</label>
+                            <input type="date" class="form-control" id="fecprest">
+                            <span class="errmsg"></span>
                         </div>
-                        <div class="form-group" id="tipos">
-                            <label>Tipo:</label>
-                            <!-- Aquí pondremos un botón para cada tipo de contacto -->
+                        <div class="form-group">
+                            <label for="img">Imagen:</label>
+                            <input type="text" class="form-control" id="img">
+                            <span class="errmsg"></span>
                         </div>
                         <br>
-                        <div id="errores" class="error">
-                            <!-- Aquí irán los errores -->
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                        <button type="reset" class="btn btn-dark">Reset</button>
+                        <button type="submit" class="btn btn-default btn-primary">Añadir</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
                     </fieldset>
                 </form>
             </div>
         </div>
-
-    </div>
-    <script src="./main.js"></script>
+        <script src="scripts/main.js"></script>
 </body>
 
 </html>

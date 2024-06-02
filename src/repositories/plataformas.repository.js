@@ -1,37 +1,37 @@
 const SERVER = 'http://localhost:3000/'
 
-export default class ItemsRepository {
+export default class PlataformasRepository {
     constructor() {
     }
 
-    async getAllItems() {
-        const response = await fetch(SERVER + 'courses')
+    async getAllPlataformas() {
+        const response = await fetch(SERVER + 'plataformas')
         if(!response.ok) {
             throw 'Error ' + response.status + ' de la BBDD: ' + response.statusText
         }
-        const items = await response.json()
-        return items
+        const plataformas = await response.json()
+        return plataformas
     }
 
-    async getItemsById(id) {
-        const response = await fetch(SERVER + 'courses/' + id)
+    async getPlataformasById(id) {
+        const response = await fetch(SERVER + 'plataformas/' + id)
         if(!response.ok) {
             throw 'Error ' + response.status + ' de la BBDD: ' + response.statusText
         }
-        const item = await response.json()
-        return item
+        const plataforma = await response.json()
+        return plataforma
     }
 
-    async addItem(item) {
-        const response = await fetch(SERVER + 'courses', {
+    async addPlataforma(plataforma) {
+        const response = await fetch(SERVER + 'plataformas', {
             method: 'POST',
             body: JSON.stringify({
-                id: item.id,
-                course: item.course,
-                cliteral: item.cliteral,
-                vliteral: item.vliteral,
-                grade: item.grade,
-                idFamily: item.idFamily,
+                id: plataforma.id,
+                plataforma: plataforma.plataforma,
+                cliteral: plataforma.cliteral,
+                vliteral: plataforma.vliteral,
+                grade: plataforma.grade,
+                idFamily: plataforma.idFamily,
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
@@ -44,10 +44,10 @@ export default class ItemsRepository {
         return myData
     }
 
-    async changeItem(item) {
-        const response = await fetch(SERVER + 'courses/' + item.id, {
+    async changePlataforma(plataforma) {
+        const response = await fetch(SERVER + 'plataformas/' + plataforma.id, {
             method: 'PUT',
-            body: JSON.stringify(item),
+            body: JSON.stringify(plataforma),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

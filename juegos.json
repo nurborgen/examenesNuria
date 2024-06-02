@@ -1,0 +1,98 @@
+{
+  "plataformas": [
+    {
+      "id": 1,
+      "nombre": "PS4"
+    },
+    {
+      "id": 2,
+      "nombre": "Android"
+    },
+    {
+      "id": 3,
+      "nombre": "PC"
+    }
+  ],
+  "juegos": [
+    {
+      "id": 1,
+      "nombre": "Final Fantasy XIV",
+      "descrip": "Final Fantasy XIV: Shadowbringers es una nueva expansión de contenido para el juego de rol multijugador de Square Enix de consolas y PC. Shadowbringers es la tercera expansión de Final Fantasy XIV y aumenta el límite de nivel hasta 80, incluyendo como es habitual una nueva y elaborada historia y nuevos escenarios. También cuenta clases nuevas, como los Gunbreakers, la primera clase anunciada, portadores de espadas pistola, como la que vimos de Squall en Final Fantasy VIII. Esta clase cumple el rol de tanque en los equipos.",
+      "plataforma": 1,
+      "fecprest": "2021-06-21",
+      "img": "final-fantasy-xiv-shadowbringers-201962810522476_1b.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Battlefield 1",
+      "descrip": "Battlefield 1, es una nueva entrega de la saga emblemática saga de acción en primera persona, que en esta ocasión estará ambientado en la Primera Guerra Mundial. El título, gracias al motor gráfico Frostbite, ofrecerá una perspectiva realista del conflicto que asoló el mundo a comienzos del siglo pasado, invitándonos a combatir en algunos escenarios de Francia o el norte de África. Una vez más, Battlefield 1 potenciará el uso de vehículos, como carros blindados, aviones y dirigibles, diversos modos de juego, un gran componente online gracias a las batallas masivas de hasta 64 jugadores y un novedoso sistema de tiempo y climatología que dinamizará las partidas en todo momento.",
+      "plataforma": 1,
+      "fecprest": "2021-06-19",
+      "img": "battlefield-1-20165623114_1b.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Overwatch",
+      "descrip": "Es la nueva saga de Blizzard esta vez en forma de multijugador online en primera persona ambientado en un mundo futurista. Habrá muchos personajes distintos y cada uno de ellos hará uso de sus propias armas y amplificadores. Destacar que cada uno de ellos cumplirá un rol diferente dentro del equipo, como Defensa, Tanque, Apoyo y Ataque.",
+      "plataforma": 1,
+      "fecprest": "2021-06-17",
+      "img": "overwatch-2016524104439_1b.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Titanfall 2",
+      "descrip": "Titanfall 2 es la secuela del juego desarrollado por Respawn Entertainment que tanto éxito cosechó entre los jugadores. Ésta nueva entrega, volverá a presentarnos un título de acción en primera persona (shooter) protagonizado por enormes robots, contando con una nueva campaña para un jugador, un modo online completo, seis nuevos titanes, mayor profundidad en las habilidades de los Pilotos, más opciones de personalización y un nuevo sistema de progresión.",
+      "plataforma": 1,
+      "fecprest": "",
+      "img": "titanfall-2-2016612222426_1b.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "PUBG Mobile",
+      "descrip": "PUBG Mobile es la versión gratuita para teléfonos móviles del battle royale multijugador de éxito de PUBG Corp. Desarrollado por Tencent, adapta de forma idéntica la jugabilidad que tantos logros y buenas críticas le ha reportado a la edición de consolas, pero trasladándola a plataformas iOS y Android. Sin cambiar un ápice su propuesta, se nos lanzará desde un enorme avión de cargo a una isla completamente desierta en la que tendremos que combatir contra un centenar de jugadores por sobrevivir y proclamarnos como el ganador y único usuario en pie.",
+      "plataforma": 2,
+      "fecprest": "2021-06-23",
+      "img": "playerunknowns-battlegrounds-mobile-201832211241_6b.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Dragon Ball Legends",
+      "descrip": "Dragon Ball Legends es un nuevo videojuego de lucha de la saga Dragon Ball para sistemas Android y iOS completamente gratuito, consolidándose como una de las apps más ambiciosas y punteras de la serie de anime y popular manga en ambos sistemas.",
+      "plataforma": 2,
+      "fecprest": "",
+      "img": "dragon-ball-legends-2018320193434_7b.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Heroes Call Android",
+      "descrip": "Heroes Call es un juego de acción y rol para Android, adaptado, por supuesto, a las pantallas táctiles. Heroes Call nos propondrá elegir un personaje antes de enmarcarnos en la aventura. Tras su lanzamiento encontramos dos avatares virtuales que harán las veces de guerrero o paladín y mago o alquimista. Ofrecen dos expenriencias de juego muy diferentes, que además el usuario podrá disfrutar de manera gratuita, ya que se basa en el modelo 'free-to-play'.",
+      "plataforma": 2,
+      "fecprest": "",
+      "img": "heroes-call-2013721194125_1b.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Inazuma Eleven Online PC",
+      "descrip": "El juego combina fútbol, acción, simulación y fantasía, como es tradicional en la saga -que hasta ahora se había lanzado solamente en las consolas de Nintendo-. En esta versión para PC centrada en el juego en línea los usuarios controlan las operaciones con el ratón, lo que permite también realizar movimientos especiales que dan lugar a intensas escenas. Por supuesto, también deben ocuparse de la organización y estrategia.",
+      "plataforma": 3,
+      "fecprest": "",
+      "img": "inazuma-eleven-online-20161226103243_1b.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Worm.is: The Game",
+      "descrip": "Worm.is: The Game es un título multijugador en el que los usuarios encarnarán a distintos gusanos que pelean y luchan por los múltiples recursos. En función de nuestra pericia, iremos cogiendo más comida y evitando los envites de los rivales, que competirán con nosotros por los recursos y al mismo tiempo, se irán haciendo más grandes.",
+      "plataforma": 3,
+      "fecprest": "2021-06-12",
+      "img": "wormis-the-game-201653192552_6b.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Apex Legends PS4",
+      "descrip": "Se trata de un Battle Royale para 60 jugadores en el que jugamos en pelotones de tres, encarnando a diferentes leyendas, cada una con su propia personalidad y habilidades -al estilo de Overwatch-, que invita a colaborar y jugar en equipo de forma táctica. Sus creadores han dicho que buscan cambiar el género, añadiendo nuevos elementos a la jugabilidad y las mecánicas, y cambiar los convencionalismos existentes en el Battle Royale, dándole nueva vida a los escenarios apoyándose en las ideas cuajadas en Titanfall.",
+      "plataforma": 1,
+      "fecprest": "",
+      "img": "apex-legends-20192510451279_11b.jpg"
+    }
+  ]
+}
