@@ -27,11 +27,7 @@ export default class PlataformasRepository {
             method: 'POST',
             body: JSON.stringify({
                 id: plataforma.id,
-                plataforma: plataforma.plataforma,
-                cliteral: plataforma.cliteral,
-                vliteral: plataforma.vliteral,
-                grade: plataforma.grade,
-                idFamily: plataforma.idFamily,
+                nombre: plataforma.nombre,
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',

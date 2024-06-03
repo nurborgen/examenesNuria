@@ -27,11 +27,11 @@ export default class JuegosRepository {
             method: 'POST',
             body: JSON.stringify({
                 id: juego.id,
-                juego: juego.juego,
-                cliteral: juego.cliteral,
-                vliteral: juego.vliteral,
-                grade: juego.grade,
-                idFamily: juego.idFamily,
+                nombre: juego.nombre,
+                plataforma: juego.plataforma,
+                descrip: juego.descrip,
+                fecprest: juego.fecprest,
+                img: juego.img,
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
@@ -58,5 +58,17 @@ export default class JuegosRepository {
           }
           const datos = await response.json()
           return datos
+    }
+
+    async delJuego(id) {
+        const response = await fetch(SERVER + 'juegos/' + id, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        if(!response.ok) {
+            throw 'Error ' + response.status + ' de la BBDD: ' + response.statusText
+        }
     }
 }
